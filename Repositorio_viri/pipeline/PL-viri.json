@@ -13,7 +13,16 @@
 					"secureOutput": false,
 					"secureInput": false
 				},
-				"userProperties": [],
+				"userProperties": [
+					{
+						"name": "Source",
+						"value": "viri//netflix1.csv"
+					},
+					{
+						"name": "Destination",
+						"value": "viri//netflix1.csv"
+					}
+				],
 				"typeProperties": {
 					"source": {
 						"type": "DelimitedTextSource",
@@ -40,6 +49,92 @@
 					"enableStaging": false,
 					"translator": {
 						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"name": "show_id",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "show_id",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "tipo",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "tipo",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "titulo",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "titulo",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "director",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "director",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "pais_id",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "pais_id",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "fecha_agregada",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "fecha_agregada",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "categoria_id",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "categoria_id",
+									"type": "String",
+									"physicalType": "String"
+								}
+							}
+						],
 						"typeConversion": true,
 						"typeConversionSettings": {
 							"allowDataTruncation": true,
