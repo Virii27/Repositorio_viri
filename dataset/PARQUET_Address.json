@@ -20,7 +20,7 @@
 				"type": "AzureBlobFSLocation",
 				"fileName": "Address.parquet",
 				"folderPath": {
-					"value": "@dataset().SistemaDeArchivos",
+					"value": "@dataset().RutaDeArchivos",
 					"type": "Expression"
 				},
 				"fileSystem": {
