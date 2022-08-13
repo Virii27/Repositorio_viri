@@ -1,0 +1,9 @@
+{
+	"name": "adf-viri",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "5e2920d1-4009-452d-9662-16b73fdf9bcc",
+		"tenantId": "11d73fd6-3cb4-4b18-ad51-55a1862c42f6"
+	}
+}
