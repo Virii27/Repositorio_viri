@@ -1,5 +1,5 @@
 {
-	"name": "Dataset",
+	"name": "Dataset_product",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureSqlDatabase1",

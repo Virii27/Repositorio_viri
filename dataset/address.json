@@ -1,5 +1,5 @@
 {
-	"name": "Table1",
+	"name": "address",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "dl_practicaa",

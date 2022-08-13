@@ -1,5 +1,5 @@
 {
-	"name": "pipeline1",
+	"name": "Practica_final",
 	"properties": {
 		"activities": [
 			{
@@ -150,7 +150,7 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "Table1",
+						"referenceName": "address",
 						"type": "DatasetReference"
 					}
 				],
@@ -686,7 +686,7 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "Dataset",
+						"referenceName": "Dataset_product",
 						"type": "DatasetReference"
 					}
 				]
