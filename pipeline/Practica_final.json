@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Copy address",
+				"name": "Copy data1",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
@@ -162,7 +162,7 @@
 				]
 			},
 			{
-				"name": "Copy customer",
+				"name": "Copy data2",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
@@ -393,7 +393,7 @@
 				]
 			},
 			{
-				"name": "Copy customeraddress",
+				"name": "Copy data3",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
@@ -423,7 +423,7 @@
 				]
 			},
 			{
-				"name": "Copy product",
+				"name": "Copy data4",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
