@@ -425,7 +425,7 @@
 				]
 			},
 			{
-				"name": "Copy data4",
+				"name": "Copy product",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
