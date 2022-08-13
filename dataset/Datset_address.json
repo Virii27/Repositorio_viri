@@ -1,5 +1,5 @@
 {
-	"name": "Datset_viri",
+	"name": "Datset_address",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureSqlDatabase1",
