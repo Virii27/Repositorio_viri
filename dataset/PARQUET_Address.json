@@ -1,0 +1,35 @@
+{
+	"name": "PARQUET_Address",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "dl_practicaa",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"SistemaDeArchivos": {
+				"type": "string"
+			},
+			"RutaDeArchivos": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "Address.parquet",
+				"folderPath": {
+					"value": "@dataset().SistemaDeArchivos",
+					"type": "Expression"
+				},
+				"fileSystem": {
+					"value": "@dataset().SistemaDeArchivos",
+					"type": "Expression"
+				}
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}
