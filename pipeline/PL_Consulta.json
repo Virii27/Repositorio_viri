@@ -24,7 +24,7 @@
 						}
 					},
 					"fieldList": [
-						"itemName"
+						"columnCount"
 					],
 					"storeSettings": {
 						"type": "AzureBlobFSReadSettings",
