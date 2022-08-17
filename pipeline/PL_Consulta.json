@@ -64,8 +64,28 @@
 							},
 							"userProperties": [],
 							"typeProperties": {
+								"source": {
+									"type": "ParquetSource",
+									"storeSettings": {
+										"type": "AzureBlobFSReadSettings",
+										"recursive": true,
+										"wildcardFolderPath": "NuevosDatos",
+										"wildcardFileName": "@item()['name']",
+										"enablePartitionDiscovery": false
+									}
+								},
 								"enableStaging": false
-							}
+							},
+							"inputs": [
+								{
+									"referenceName": "parquet_Address",
+									"type": "DatasetReference",
+									"parameters": {
+										"SistemaDeArchivos": "almviri",
+										"DireccionDeArchivo": "practicafinal"
+									}
+								}
+							]
 						}
 					]
 				}
