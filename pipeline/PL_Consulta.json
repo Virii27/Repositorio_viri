@@ -46,7 +46,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"items": {
-						"value": "@activity('Get Metadata1').output.childItems",
+						"value": "@activity('Get Metadata1').output.itemType",
 						"type": "Expression"
 					},
 					"isSequential": true,
@@ -74,7 +74,22 @@
 										"enablePartitionDiscovery": false
 									}
 								},
-								"enableStaging": false
+								"sink": {
+									"type": "AzureSqlSink",
+									"writeBehavior": "insert",
+									"sqlWriterUseTableLock": false,
+									"tableOption": "autoCreate",
+									"disableMetricsCollection": false
+								},
+								"enableStaging": false,
+								"translator": {
+									"type": "TabularTranslator",
+									"typeConversion": true,
+									"typeConversionSettings": {
+										"allowDataTruncation": true,
+										"treatBooleanAsNumber": false
+									}
+								}
 							},
 							"inputs": [
 								{
@@ -83,6 +98,16 @@
 									"parameters": {
 										"SistemaDeArchivos": "almviri",
 										"DireccionDeArchivo": "practicafinal"
+									}
+								}
+							],
+							"outputs": [
+								{
+									"referenceName": "SQL_dataset1",
+									"type": "DatasetReference",
+									"parameters": {
+										"Tabla": "@concat(replace(item()['name'],'.parquet',''),'_NuevaTabla')",
+										"Esquema": "SalesLT"
 									}
 								}
 							]
