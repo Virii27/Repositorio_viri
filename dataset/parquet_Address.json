@@ -19,7 +19,14 @@
 			"location": {
 				"type": "AzureBlobFSLocation",
 				"fileName": "Address.parquet",
-				"fileSystem": "practicafinal"
+				"folderPath": {
+					"value": "@dataset().DireccionDeArchivo",
+					"type": "Expression"
+				},
+				"fileSystem": {
+					"value": "@dataset().SistemaDeArchivos",
+					"type": "Expression"
+				}
 			},
 			"compressionCodec": "snappy"
 		},
