@@ -1,0 +1,20 @@
+{
+	"name": "SQL_dataset1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SQL_BD1",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"Tabla": {
+				"type": "string"
+			},
+			"Esquema": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": []
+	}
+}
