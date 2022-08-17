@@ -17,7 +17,11 @@
 				"typeProperties": {
 					"dataset": {
 						"referenceName": "parquet_Address",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"SistemaDeArchivos": "almviri",
+							"DireccionDeArchivo": "practicafinal"
+						}
 					},
 					"fieldList": [
 						"itemType"
