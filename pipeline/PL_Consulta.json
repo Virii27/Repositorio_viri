@@ -24,7 +24,7 @@
 						}
 					},
 					"fieldList": [
-						"structure"
+						"contentMD5"
 					],
 					"storeSettings": {
 						"type": "AzureBlobFSReadSettings",
